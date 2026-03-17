@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pairing_title"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvPairingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/not_connected"
+        android:textColor="@color/text_secondary"
+        android:textSize="17sp"
+        android:paddingBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnOpenBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/open_bluetooth_settings"
+        android:textSize="18sp"
+        style="@style/Widget.ElderlyRemote.Button.Control" />
+
+    <!-- Power / Wake notice -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/power_wake_notice"
+        android:textColor="@color/text_warning"
+        android:textSize="15sp"
+        android:background="@color/bg_notice"
+        android:padding="12dp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

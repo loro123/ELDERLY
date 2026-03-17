@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ElderlyRemote" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/btn_ok_bg</item>
+        <item name="colorPrimaryVariant">@color/btn_ok_pressed</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSurface">@color/bg_dark</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_strip</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="switchStyle">@style/Widget.ElderlyRemote.Switch</item>
+    </style>
+
+    <style name="Theme.ElderlyRemote.Dialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="colorSurface">@color/bg_dark</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+    </style>
+
+    <!-- ---- Button Styles ---- -->
+
+    <style name="Widget.ElderlyRemote.Button.Control" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/btn_control_text</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="backgroundTint">@color/btn_control_bg</item>
+        <item name="rippleColor">@color/btn_control_pressed</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.ElderlyRemote.Button.Control.Ok" parent="Widget.ElderlyRemote.Button.Control">
+        <item name="backgroundTint">@color/btn_ok_bg</item>
+        <item name="rippleColor">@color/btn_ok_pressed</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="Widget.ElderlyRemote.Button.Control.Power" parent="Widget.ElderlyRemote.Button.Control">
+        <item name="backgroundTint">@color/btn_power_bg</item>
+        <item name="rippleColor">@color/btn_power_pressed</item>
+    </style>
+
+    <style name="Widget.ElderlyRemote.Button.Favorite" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/btn_control_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="backgroundTint">@color/btn_favorite_bg</item>
+        <item name="rippleColor">@color/btn_favorite_pressed</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.ElderlyRemote.Button.Small" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="backgroundTint">@color/btn_small_bg</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="cornerRadius">6dp</item>
+    </style>
+
+    <style name="Widget.ElderlyRemote.Tab" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="backgroundTint">@color/tab_normal_bg</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.ElderlyRemote.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="colorControlActivated">@color/btn_ok_bg</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+</resources>

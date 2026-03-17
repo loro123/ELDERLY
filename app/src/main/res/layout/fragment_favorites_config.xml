@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <!-- Favorites count selector -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favorites_count_label"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp" />
+
+        <Button android:id="@+id/btnCount4"  android:layout_width="64dp" android:layout_height="44dp" android:text="4"  android:layout_marginEnd="8dp" style="@style/Widget.ElderlyRemote.Button.Small" />
+        <Button android:id="@+id/btnCount6"  android:layout_width="64dp" android:layout_height="44dp" android:text="6"  android:layout_marginEnd="8dp" style="@style/Widget.ElderlyRemote.Button.Small" />
+        <Button android:id="@+id/btnCount8"  android:layout_width="64dp" android:layout_height="44dp" android:text="8"  android:layout_marginEnd="8dp" style="@style/Widget.ElderlyRemote.Button.Small" />
+        <Button android:id="@+id/btnCount12" android:layout_width="64dp" android:layout_height="44dp" android:text="12" style="@style/Widget.ElderlyRemote.Button.Small" />
+
+    </LinearLayout>
+
+    <!-- Favorites list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

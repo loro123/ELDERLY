@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/bg_row"
+    android:padding="12dp"
+    android:layout_marginBottom="2dp">
+
+    <!-- Drag handle -->
+    <ImageView
+        android:id="@+id/dragHandle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_drag_handle"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="Drag to reorder" />
+
+    <!-- Label -->
+    <android.widget.EditText
+        android:id="@+id/etFavLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/favorite_label_hint"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="17sp"
+        android:backgroundTint="@color/text_secondary"
+        android:layout_marginEnd="12dp" />
+
+    <!-- Type selector -->
+    <Spinner
+        android:id="@+id/spinnerFavType"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp" />
+
+    <!-- Digits / key value -->
+    <android.widget.EditText
+        android:id="@+id/etFavValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/favorite_value_hint"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="17sp"
+        android:backgroundTint="@color/text_secondary"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Pick image button -->
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/pick_image"
+        style="@style/Widget.ElderlyRemote.Button.Small" />
+
+</LinearLayout>

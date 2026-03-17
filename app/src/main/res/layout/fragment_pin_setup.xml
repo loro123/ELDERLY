@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_dark"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_setup_title"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="16dp" />
+
+    <android.widget.EditText
+        android:id="@+id/etNewPin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_pin_hint"
+        android:inputType="numberPassword"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="20sp"
+        android:backgroundTint="@color/text_secondary"
+        android:layout_marginBottom="12dp" />
+
+    <android.widget.EditText
+        android:id="@+id/etConfirmPin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_pin_hint"
+        android:inputType="numberPassword"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="20sp"
+        android:backgroundTint="@color/text_secondary"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSavePin"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:text="@string/save_pin"
+        android:textSize="17sp"
+        style="@style/Widget.ElderlyRemote.Button.Control" />
+
+    <TextView
+        android:id="@+id/tvPinError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_error"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

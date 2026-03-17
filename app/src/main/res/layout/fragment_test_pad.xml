@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_pad_title"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="16dp" />
+
+        <!-- D-Pad row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button android:id="@+id/testBtnUp"    android:layout_width="80dp" android:layout_height="56dp" android:text="UP"    android:layout_margin="4dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtnDown"  android:layout_width="80dp" android:layout_height="56dp" android:text="DOWN"  android:layout_margin="4dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtnLeft"  android:layout_width="80dp" android:layout_height="56dp" android:text="LEFT"  android:layout_margin="4dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtnRight" android:layout_width="80dp" android:layout_height="56dp" android:text="RIGHT" android:layout_margin="4dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtnOk"    android:layout_width="80dp" android:layout_height="56dp" android:text="OK"    android:layout_margin="4dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtnBack"  android:layout_width="80dp" android:layout_height="56dp" android:text="BACK"  android:layout_margin="4dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtnHome"  android:layout_width="80dp" android:layout_height="56dp" android:text="HOME"  android:layout_margin="4dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+
+        </LinearLayout>
+
+        <!-- Digit row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button android:id="@+id/testBtn0" android:layout_width="60dp" android:layout_height="56dp" android:text="0" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn1" android:layout_width="60dp" android:layout_height="56dp" android:text="1" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn2" android:layout_width="60dp" android:layout_height="56dp" android:text="2" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn3" android:layout_width="60dp" android:layout_height="56dp" android:text="3" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn4" android:layout_width="60dp" android:layout_height="56dp" android:text="4" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn5" android:layout_width="60dp" android:layout_height="56dp" android:text="5" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn6" android:layout_width="60dp" android:layout_height="56dp" android:text="6" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn7" android:layout_width="60dp" android:layout_height="56dp" android:text="7" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn8" android:layout_width="60dp" android:layout_height="56dp" android:text="8" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+            <Button android:id="@+id/testBtn9" android:layout_width="60dp" android:layout_height="56dp" android:text="9" android:layout_margin="3dp" style="@style/Widget.ElderlyRemote.Button.Control" />
+
+        </LinearLayout>
+
+        <!-- Sample sequence config -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_sequence_label"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp" />
+
+            <android.widget.EditText
+                android:id="@+id/etTestSequence"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="202"
+                android:inputType="number"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/text_secondary"
+                android:textSize="18sp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_delay_label"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp" />
+
+            <android.widget.EditText
+                android:id="@+id/etTestDelay"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:inputType="number"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/text_secondary"
+                android:textSize="18sp"
+                android:layout_marginEnd="16dp" />
+
+            <CheckBox
+                android:id="@+id/cbTestEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_send_enter"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSendSample"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:text="@string/send_sample_sequence"
+            android:textSize="17sp"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.ElderlyRemote.Button.Control" />
+
+        <!-- Live log line -->
+        <TextView
+            android:id="@+id/tvTestLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:background="@color/bg_row"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
